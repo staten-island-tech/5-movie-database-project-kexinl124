@@ -10,12 +10,13 @@ for index,item in enumerate(data):
 
 choice1 = int(input("Give a year after:"))
 choice2 = int(input("Give a year for before:"))
-choice3=int(input("Choose a specific year"))
+choice3 = int(input("Year?"))
+
 for item in data:
     if choice2 > item['year'] > choice1:
-         print(item["title"])
-    else:
-        choice3=item['year']
+         print(item['title'], item['year'])
+
+    if choice3 == item['year']:
         print(item['title'])
         
 
