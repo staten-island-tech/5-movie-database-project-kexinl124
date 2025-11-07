@@ -8,16 +8,22 @@ for index,item in enumerate(data):
     print(index, ":", (item)['title'])
     
 
-choice1 = int(input("Give a year after:"))
-choice2 = int(input("Give a year for before:"))
+# choice1 = int(input("Give a year after:"))
+# choice2 = int(input("Give a year for before:"))
 
-for item in data:
-    if choice2 > item['year'] > choice1:
-         print(item['title'], item['year'])
+# for item in data:
+#     if choice2 > item['year'] > choice1:
+#          print(item['title'], item['year'])
 
-choice3 = int(input("Year?"))
+# choice3 = int(input("Year?"))
+# for item in data:
+#     if choice3 == item['year']:
+#         print(item['title'])
+
+choice4 = input("Name a movie:")
 for item in data:
-    if choice3 == item['year']:
+    if choice4 == item['title']:
         print(item['title'])
+
         
 
