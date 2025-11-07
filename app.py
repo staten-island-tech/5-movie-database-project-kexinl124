@@ -24,7 +24,7 @@ def search():
     found = 0
     for item in data:
         if choice4.lower in item['title'].lower:
-            print(item['title'].lower)
+            print(f"{item['title'].lower} is a movie")
             found +=1
         if found == 0:
             print("no exist")
