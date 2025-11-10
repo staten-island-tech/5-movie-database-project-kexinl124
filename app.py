@@ -5,7 +5,7 @@ movies = open("./movies.json", encoding="utf8")
 data = json.load(movies)
 
 # for index,item in enumerate(data):
-#     print(index, ":", (item)['title'])
+#      print(index, ":", (item)['title'])
     
 
 # choice1 = int(input("Give a year after:"))
@@ -19,14 +19,25 @@ data = json.load(movies)
 # for item in data:
 #     if choice3 == item['year']:
 #         print(item['title'])
-def search():
-    choice4 = input("Name a movie:")
+# def search():
+#     choice4 = input("Name a movie:")
+#     found = 0
+#     for item in data:
+#         if choice4.lower() in item['title'].lower():
+#             print(f"{item['title'].lower()} is a movie")
+#             found +=1
+#         if found == 0:
+#             print("no exist")
+# search() 
+
+def x():
+    choice5 = input("Name genres:")
     found = 0
     for item in data:
-        if choice4.lower in item['title'].lower:
-            print(f"{item['title'].lower} is a movie")
+        if choice5 in item['genres']:
+            print(f"{item['title']} is a movie")
             found +=1
         if found == 0:
             print("no exist")
-search()
+x()
 
