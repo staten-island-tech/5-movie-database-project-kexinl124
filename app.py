@@ -31,7 +31,7 @@ data = json.load(movies)
 # search() 
 
 def x():
-    choice5 = input("Name genres:")
+    choice5 = input("Type the genre captialize! Name genres:")
     found = 0
     for item in data:
         if choice5 in item['genres']:
